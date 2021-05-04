@@ -6,4 +6,4 @@
   tasks:
 
     - name: ping
-      ping:
+      shell: ping -c 1 -w 2 "{{ destination }}"
