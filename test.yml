@@ -1,0 +1,6 @@
+---
+
+  - hosts: {{ hostname }}
+  gather_facts: false
+  tasks:
+    - ping:
