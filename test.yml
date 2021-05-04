@@ -1,6 +1,9 @@
 ---
+- hosts: {{ hostname }}
 
-  - hosts: {{ hostname }}
-    gather_facts: false
+  gather_facts: no
+
   tasks:
-    - ping:
+
+    - name: ping
+      ping:
